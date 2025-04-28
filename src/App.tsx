@@ -11,6 +11,12 @@ import About from "./pages/About";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import SSPLM from "./pages/SSPLM";
+import SSPLA from "./pages/SSPLA";
+import Documents from "./pages/Documents";
+import Join from "./pages/Join";
+import Media from "./pages/Media";
+import Accountability from "./pages/Accountability";
 
 const queryClient = new QueryClient();
 
@@ -26,9 +32,14 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
+              <Route path="/ssplm" element={<SSPLM />} />
+              <Route path="/sspla" element={<SSPLA />} />
               <Route path="/news" element={<News />} />
+              <Route path="/documents" element={<Documents />} />
+              <Route path="/join" element={<Join />} />
+              <Route path="/media" element={<Media />} />
               <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="/accountability" element={<Accountability />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
