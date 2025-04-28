@@ -25,7 +25,11 @@ const Navbar = () => {
         {/* Logo and Name */}
         <Link to="/" className="flex items-center space-x-3">
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-300">
-            <div className="emblem-colors w-full h-full"></div>
+            <img 
+              src="/logo.png" 
+              alt="SSPLM/A Logo" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <div>
             <h1 className="font-bold text-lg md:text-xl">SSPLM/A</h1>
